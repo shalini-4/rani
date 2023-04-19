@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>FORM PAGE
+		<title>wlcome to the formpage</title>
+		<link rel="icon" href="assets/images/unique.jpg">
+		<style>
+			input[type="text"]{
+			                   background-color:red;
+							   }
+			body{
+			     background-image:url('assets/images/rose.jpg');
+				 }
+			body{
+			     background-repeat:repeat-x;
+				 }
+			bosy{
+			     background-position:center;
+				 }
+			h1,h4{
+			   color:yellow;
+			   }
+		
+		</style>
+	</head>
+	<body>
+		<h1>student detail</h1>
+		<form action=""method="">
+			<input type="text" placeholder="enter the student name" name="user"/><br/>
+			<input type="password" placeholder="enter your password" name="pass"/><br/>
+			<input type="email" placeholder="enter your email" name="email" autocomplete="off"/><br/>
+		</form>
+		<form action="service.html"encrtype="multipart/form-data"method="post"/ >
+			<input type="number" placeholder="enter your age" name="number" required /><br/>
+			<input type="number" placeholder="studentid" min=0 max=12 name="number" /><br/>
+			<input type="date" name="date"/><br/>
+			<input type="hidden" name="hidden" value="hidden"/>
+			<select name="select">
+				<option value="madurai">madurai</option>
+				<option value="chennai">chennai</option>
+				<option value="ooty">ooty</option>
+				<option value="karoor" selected>karor</option>
+			</select>
+			<textarea name="textarea" row=5 col=10 required / ></textarea>
+			<input type="color" name="color"/><br/>
+			<input type="range" name="range"/><br/>
+			<input type="radio" name="radio" value="yes"/>yes
+			<input type="radio" name="radio" value="no"/>no
+			<h4>how many language you know</h4>
+			<input type="checkbox" name="checkbox"/>Tamil
+			<input type="checkbox" name="checkbox"/>English
+			<input type="checkbox" name="checkbox"/>Hindi
+			<input type="checkbox" name="checkbox" disabled />Telugu
+			<input type="file" name="file"/>
+			<input type="reset" value="reset"/>
+			<input type="submit" value="submit"/>
+		</form>
+	</body>
+</html>
+	

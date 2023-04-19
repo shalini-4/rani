@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JAVA SCRIPT</title>
+	</head>
+		<body>
+			<form action="" nmae="form data" onsubmit="validate form()">
+				<input type-"text" nmae-"text box"/>
+				<input type="submit" value="SUBMIT">
+			</form>
+			<script>
+				alert('it is wrong page')
+				prompt("what  is your query")
+				document.write("hello world<br/>")
+				document.write(10+5)
+				document.write(true)
+				console.log("hi")
+				_A=14
+				document.write(_A+"<br/>")
+				$A=15
+				document.write($A+"<br/>")
+				$B=4
+				C=7
+				document.write($A+C+"<br/>")
+				$D=78
+				E="hell0"
+				document.write($D+E+"<br/>")
+				g=10
+				h=4
+				document.write(g+h+"<br/>")
+				document.write(g-h+"<br/>")
+				document.write(g*h+"<br/>")
+				document.write(g/h+"<br/>")
+				document.write(g%h+"<br/>")
+				document.write(g**h+"<br/>")
+				array1=[1,2,3,4,5,6]
+			    document.write(array1+"<br/>")
+				console.log(array1)
+				document.write(array1[2]+"<br/>")
+				document.write(array1.length+"<br/>")
+				document.write(array1.length-0+"<br/>")
+				array1.pop()
+				document.write(array1+"<br/>")
+				array1.push(8)
+				document.write(array1+"<br/>")
+				array1.shift()
+				document.write(array1+"<br/>")
+				array1.unshift(0)
+				document.write(array1+"<br/>")
+				array2=[9,10,11,12,13,]
+				document.write(array1.concat(array2)+"<br/>")
+				array1.reverse()
+				document.write(array1+"<br/>")
+				array1.sort()
+				document.write(array1+"<br/>")
+				for(i=0;i<5;i++)
+				{
+				 document.write(i+"<br/>")
+				}
+				while(i<6)
+				{
+				 document.write(i+"<br/>")
+				 i++
+				}
+				i=0
+				do
+				{
+				 document.write(i+"<br/>")
+				 i++
+				}
+				while(i<10)
+				x=1
+				if(x==1)
+				{
+				 document.write("true<br/>")
+				}
+				else
+				{
+				 document.write("false<br/>")
+				}
+				x=2
+				if(x==1)
+				{
+				 document.write("1 is true<br/>")
+				}
+				else if(x==2)
+				{
+				 document.write("2 is true<br/>")
+				}
+				else
+				{
+				 document.write("default statement<br/>")
+			    }
+				x=4
+				switch(x)
+				{
+				  case 1:
+				    document.write("four")
+				    break;
+				  case 2:
+				    document.write("five")
+					break;
+				  default:
+				     document.write("default statement<br/>")
+					 
+				}
+				
+				for(i=1;i<=10;i++){
+					document.write(i+"is the current number"+"<br/>")
+					if(i==5){
+						continue;
+						}
+					}
+				function Test(){
+					document.write("hello world" +"<br/>")
+					}
+				Test()
+				function Test(a,b){
+					document.write(a+b+"<br/>")
+					}
+					Test(1,3)
+				student={
+					name:"test data",
+					roll:1,
+					department:"CSE"
+					}
+				document.write(student.name +"<br/>")
+				student=new Object()
+				student.name="test data"
+				student.roll=1
+				student.department="CSE"
+				document.write(student.roll +"<br/>")
+				x=function(){
+					return "helllo world"
+					}
+				document.write(x()+"<br/>")
+				arrow=()=>{document.write('hi')}
+				arrow()
+			function validateForm(){
+				x=document.Form['form data']['text box'].value
+				if(x==''){
+					document.write("name should not be empty")}}
+			
+			</script>
+		</body>
+</html>

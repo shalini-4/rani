@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SHAPES</title>
+		<style>
+			.squre{
+			       width:100px;
+				   height:100px;
+				   background-color:green;
+				   }
+			.squre:hover{
+					width:200px;
+					hight:200px;
+					transition-delay:2s;
+					transition-property:3s;
+					transition-timing-function:ease-in;
+					transform:skew x(100deg);
+					}
+			.rectangle{
+					width:250px;
+					height:150px;
+					background-color:violet;
+					}
+			.rectangle:hover{
+					width:200px;
+					hight:200px;
+					hight:200px;
+					transform:skew y(100deg)
+					}
+			.circle{
+					width:250px;
+					height:150px;
+					background-color:blue;
+					border-radius:70%;
+					}
+			.triangle{
+					border-left:100px solid transparent;
+					border-right:100px solid transparent;
+					border-top:100px solid transparent;
+					border-bottom:100px solid green;
+					width:5px;
+					}
+			.diamond{
+					width:0;
+					height:0;
+					border:50px solid transparent;
+					border-bottom-color:blue;
+					position:relative;
+					top:-50px;
+					}
+			.diamond:after{
+					content:"";
+					position:absolute;
+					left:-50px;
+					top:50px;
+					width:0;
+					height:0;
+					border:50px solid transparent;
+					border-top-color:blue;
+					}
+			.pentagon{
+					position:relative;
+					width:54px;
+					box-sizing:content-box;
+					border-width:50px 18px 0;
+					border-style:solid;
+					border-color:gold transparent;
+					}
+			.pentagon:before{
+					content:"";
+					position:absolute;
+					height:0;
+					width:0;
+				    top:-85px;
+					left:-18px;
+					border-width:0 45px 35px;
+					border-style:solid;
+					border-color:transparent transparent gold;
+					}
+			.hexagone{
+					width:100px;
+					height:55px;
+					background:red;
+					position:relative;
+					}
+			.hexagone:before{
+					content:"";
+					position:absolute;
+					top:-25px;
+					left:0;
+					width:0;
+					height:0;
+					border-left:50px solid transparent;
+					border-right:50px solid transparent;
+					border-bottom:25px solid red;
+					}
+			.hexagone:after{
+					content:"";
+					position:absolute;
+					bottom:-25px;
+					left:0;
+					width:0;
+					height:0;
+					border-left:50px solid transparent;
+					border-right:50px solid transparent;
+					border-top:25px solid red;
+					}
+			.shape{
+				width:0;
+				height:0;
+				border-left:50px solid transparent;
+				border-top:50px solid transparent;
+                border-right:50px solid transparent;
+			    border-bottom:100px solid black;
+				}
+	    </style>
+	</head>
+		<body>
+			<div class="squre"></div></br>
+			<div class="rectangle"></div></br>
+			<div class="circle"></div>
+			<div class="triangle"></div></br>
+	        <div class ="diamond"></div></br></br>
+			<div class="pentagon"></div></br></br>
+			<div class="hexagone"></div></br>
+			<div class="shape"></div>
+		</body>
+</html>
